@@ -2,6 +2,8 @@
 
 # Tambouile
 
+"dev": "cross-env TAILWIND_MODE=watch next dev",
+
 Tambouille is a personnal french recipes website aimed to my family and acquaintances. It was inspired by an exercise made with my former PO.
 
 ## Stack
@@ -110,3 +112,11 @@ node ./scripts/compose.js "My First Post" .md
 ```
 
 This will generate `./data/recettes/my-first-recipe.md` with pre-filled front matter.
+
+echo "# tambouille" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/broklyn777/tambouille.git
+git push -u origin main
